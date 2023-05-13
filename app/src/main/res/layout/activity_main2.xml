@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lay_top"
+            android:layout_alignTop="@+id/lay_top"
+            android:layout_alignEnd="@+id/lay_top"
+            android:layout_alignBottom="@+id/lay_top"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg3" />
+
+        <LinearLayout
+            android:id="@+id/lay_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon3" />
+
+            <TextView
+                android:id="@+id/headtextview"
+                android:layout_width="207dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/what_do_you_want_to_cook"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:text="You can sift through tons of recipes,\nsave your favorites, and check out mobile-friendly cooking videos."
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_white">
+
+        <ProgressBar
+            android:id="@+id/indeterminateBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateTint="#313232"
+            android:layout_centerInParent="true"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="378dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+           android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            app:tabBackground="@drawable/bg_tab_item"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="@color/black" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_layout"
+            android:id="@+id/view_pager"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

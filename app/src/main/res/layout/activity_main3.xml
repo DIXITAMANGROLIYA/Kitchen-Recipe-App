@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/open_recipe_Image"
+            android:scaleType="centerCrop"/>
+       <ImageView
+           android:id="@+id/back"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="10dp"
+           android:src="@drawable/back_img"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/open_recipe_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:gravity="center_vertical"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/ingredient"
+           android:text="Ingredients"
+           android:textSize="18sp"
+           android:padding="@dimen/_5sdp"
+           android:textColor="#FF0000"
+          android:layout_marginHorizontal="@dimen/_5sdp"
+           android:textStyle="bold"/>
+        <View
+            android:layout_width="4sp"
+            android:layout_height="match_parent"
+            android:background="#2A2727"
+            android:layout_marginVertical="2sp"
+            />
+
+        <TextView
+            android:id="@+id/method"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:padding="5px"
+            android:text="Method"
+            android:textColor="#808080"
+            android:textSize="18sp"
+            android:layout_marginHorizontal="@dimen/_5sdp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="10sp"
+        android:scrollbars="vertical"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black" />
+
+</LinearLayout>

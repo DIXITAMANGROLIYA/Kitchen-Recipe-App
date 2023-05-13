@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kitchen Recipe</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category">Category</string>
+    <string name="what_do_you_want_to_cook">What Do You Want To <font color='#FFC107'>COOK</font>?</string>
+    <string name="are_you_sure_want_to_exit">Are you sure Want to Exit</string>
+</resources>
